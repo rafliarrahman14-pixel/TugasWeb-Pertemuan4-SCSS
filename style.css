@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fc;
+  color: #172554;
+}
+
+.header {
+  background-color: #123b8c;
+  padding: 20px 50px;
+}
+.header__title {
+  margin: 0 0 15px;
+  color: #ffffff;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigation__link:hover {
+  color: #f5a000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 500px;
+  padding: 60px 80px;
+}
+.hero__content {
+  flex: 1;
+}
+.hero__title {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.hero__highlight {
+  color: #f5a000;
+}
+.hero__text {
+  max-width: 550px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.hero__quote {
+  line-height: 1.7;
+}
+.hero__figure {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+.hero__image {
+  width: 380px;
+  max-width: 100%;
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(18, 59, 140, 0.2);
+}
+.hero__caption {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer {
+  background-color: #123b8c;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+.footer__text {
+  margin: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-left: 5px solid #f5a000;
+  border-radius: 12px;
+}
+.card__title {
+  color: #123b8c;
+  margin-top: 0;
+}
+.card__text {
+  line-height: 1.7;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(18, 59, 140, 0.15);
+  transition: 0.3s;
+}
+
+.section-title {
+  color: #123b8c;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.about {
+  padding: 60px 80px;
+}
+
+.learning {
+  padding: 60px 80px;
+}
+
+.activities {
+  padding: 60px 80px;
+}
+
+.hobbies {
+  padding: 60px 80px;
+}
+
+.contact {
+  padding: 60px 80px;
+}
+
+/* Tentang Saya */
+.about {
+  background-color: #ffffff;
+}
+.about__text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Pembelajaran */
+.learning {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.learning .section-title {
+  grid-column: 1/-1;
+}
+
+/* Aktivitas dan Pengalaman */
+.activities {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  background-color: #ffffff;
+}
+.activities .section-title {
+  grid-column: 1/-1;
+}
+.activities .card {
+  background-color: #f5f7fc;
+}
+
+/* Hobi */
+.hobbies {
+  text-align: center;
+}
+.hobbies .card {
+  max-width: 700px;
+  margin: 0 auto 15px;
+}
+
+/* Prinsip Hidup */
+.principle {
+  padding: 45px 80px;
+  background-color: #123b8c;
+  color: #ffffff;
+  text-align: center;
+}
+.principle__title {
+  color: #f5a000;
+}
+.principle__text {
+  font-size: 18px;
+}
+
+/* Kontak */
+.contact {
+  background-color: #ffffff;
+}
+.contact__description {
+  line-height: 1.6;
+}
+.contact__form {
+  max-width: 800px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact__field {
+  margin: 0;
+}
+.contact__label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.contact__input, .contact__textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.contact__input:focus, .contact__textarea:focus {
+  outline: none;
+  border-color: #123b8c;
+}
+.contact__textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+.contact__color {
+  width: 80px;
+  height: 45px;
+  padding: 3px;
+}
+.contact__range {
+  width: 100%;
+}
+.contact__button {
+  background-color: #123b8c;
+  color: #ffffff;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact__button:hover {
+  background-color: #f5a000;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+  .navigation__list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 25px;
+  }
+  .hero__title {
+    font-size: 32px;
+  }
+  .hero__text {
+    max-width: 100%;
+  }
+  .hero__image {
+    width: 280px;
+  }
+  .learning,
+  .activities {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+  }
+  .learning .section-title,
+  .activities .section-title {
+    grid-column: auto;
+  }
+  .about,
+  .hobbies,
+  .contact {
+    padding: 40px 25px;
+  }
+  .principle {
+    padding: 40px 25px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827;
+    color: #e5e7eb;
+  }
+  .about,
+  .contact,
+  .card {
+    background-color: #1f2937;
+  }
+  .activities {
+    background-color: #111827;
+  }
+  .activities .card {
+    background-color: #1f2937;
+  }
+  .contact__input,
+  .contact__textarea {
+    background-color: #374151;
+    color: #e5e7eb;
+    border-color: #4b5563;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

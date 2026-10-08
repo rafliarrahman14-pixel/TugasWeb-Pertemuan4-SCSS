@@ -1,0 +1,53 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+@include responsive($breakpoint-mobile) {
+    .header {
+        padding: $spacing-md;
+    }
+
+    .navigation {
+        &__list {
+            flex-direction: column;
+            gap: $spacing-nav-mobile;
+        }
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: $spacing-xl $spacing-mobile;
+
+        &__title {
+            font-size: $font-size-xl;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__image {
+            width: 280px;
+        }
+    }
+
+    .learning,
+    .activities {
+        grid-template-columns: 1fr;
+        padding: $spacing-xl $spacing-mobile;
+
+        .section-title {
+            grid-column: auto;
+        }
+    }
+
+    .about,
+    .hobbies,
+    .contact {
+        padding: $spacing-xl $spacing-mobile;
+    }
+
+    .principle {
+        padding: $spacing-xl $spacing-mobile;
+    }
+}

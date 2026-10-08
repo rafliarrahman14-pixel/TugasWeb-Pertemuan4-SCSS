@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+
+    .about,
+    .contact,
+    .card {
+        background-color: $dark-surface;
+    }
+
+    .activities {
+        background-color: $dark-bg;
+    }
+
+    .activities .card {
+        background-color: $dark-surface;
+    }
+
+    .contact__input,
+    .contact__textarea {
+        background-color: $dark-input;
+        color: $dark-text;
+        border-color: $dark-border;
+    }
+}

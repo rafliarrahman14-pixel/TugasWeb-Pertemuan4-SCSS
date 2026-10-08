@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+
+.header {
+    background-color: $warna-biru;
+    padding: $spacing-header-y $spacing-header-x;
+
+    &__title {
+        margin: 0 0 $spacing-md;
+        color: $warna-putih;
+    }
+}

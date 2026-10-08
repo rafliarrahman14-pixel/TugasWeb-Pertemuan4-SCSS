@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+
+.navigation {
+    &__list {
+        display: flex;
+        gap: $spacing-lg;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link {
+        color: $warna-putih;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            color: $warna-orange;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+body {
+    font-family: $font-family;
+    background-color: $warna-bg;
+    color: $warna-teks;
+}

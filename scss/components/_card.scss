@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.card {
+    background-color: $warna-putih;
+    padding: $spacing-lg;
+    border-left: 5px solid $warna-orange;
+    border-radius: $radius-md;
+
+    &__title {
+        color: $warna-biru;
+        margin-top: 0;
+    }
+
+    &__text {
+        line-height: 1.7;
+    }
+
+    @include card-hover;
+}

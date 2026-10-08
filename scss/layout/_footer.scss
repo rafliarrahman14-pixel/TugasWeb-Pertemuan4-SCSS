@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as *;
+
+.footer {
+    background-color: $warna-biru;
+    color: $warna-putih;
+    text-align: center;
+    padding: $spacing-footer;
+
+    &__text {
+        margin: 0;
+    }
+}

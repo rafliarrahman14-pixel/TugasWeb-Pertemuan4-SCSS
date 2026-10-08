@@ -1,0 +1,58 @@
+// COLORS
+$warna-biru: #123b8c;
+$warna-orange: #f5a000;
+$warna-putih: #ffffff;
+$warna-bg: #f5f7fc;
+$warna-teks: #172554;
+$warna-border: #cbd5e1;
+
+// DARK MODE COLORS
+$dark-bg: #111827;
+$dark-text: #e5e7eb;
+$dark-surface: #1f2937;
+$dark-input: #374151;
+$dark-border: #4b5563;
+
+// SPACING
+$spacing-xs: 8px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 25px;
+$spacing-xl: 40px;
+$spacing-xxl: 60px;
+$spacing-section: 60px;
+$spacing-wide: 80px;
+$spacing-mobile: 25px;
+$spacing-nav-mobile: 12px;
+$spacing-hero-gap: 50px;
+$spacing-header-y: 20px;
+$spacing-header-x: 50px;
+$spacing-footer: 20px;
+$spacing-form: 30px;
+$spacing-input: 14px;
+$spacing-principle: 45px;
+
+// TYPOGRAPHY
+$font-family: Arial, sans-serif;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 32px;
+$font-size-xxl: 42px;
+
+// BORDER & RADIUS
+$border-width: 1px;
+$border-accent: 5px;
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 20px;
+
+// SHADOW
+$shadow-image: 0 10px 25px rgba(18, 59, 140, 0.2);
+$shadow-card-hover: 0 8px 20px rgba(18, 59, 140, 0.15);
+
+// TRANSITION
+$transition-normal: 0.3s;
+
+// RESPONSIVE
+$breakpoint-mobile: 768px;
